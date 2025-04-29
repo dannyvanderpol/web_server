@@ -1,0 +1,5 @@
+# Location for the log files, should not be in git
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
