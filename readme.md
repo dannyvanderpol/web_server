@@ -75,3 +75,21 @@ Download phpMyAdmin from: https://www.phpmyadmin.net/downloads
 Run the file 'start_server.bat' and choose option 3 to start all the servers.
 Open a browser and go to: http:\\localhost:8080/phpmyadmin.
 Check if everyhting works as expected.
+
+## Add services
+
+Apache and MariaDB can be added to the Windows Services.
+After installation, the services can be managed through the Windows Services application.
+Note that before uninstalling a service, the service must be stopped first.
+Note that administrator rights are required for installing and uninstalling services.
+Note that after installing and running the services, the batch file for starting the server might not work.
+
+### Apache:
+
+* Install service: `web_server/apache/bin/httpd.exe -k install`
+* Remove service: `web_server/apache/bin/httpd.exe -k uninstall`
+
+### MariaDB:
+
+* Install service: `web_server/mariadb/bin/mariadbd.exe --install`
+* Remove service: `web_server/mariadb/bin/mariadbd.exe --remove`
