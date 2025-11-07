@@ -24,7 +24,7 @@ Download the binaries from: https://www.apachelounge.com/download
 * Delete the `web_server/apache/htdocs` folder.
 * Delete all files in the `web_server/apache/conf` folder.
 * Copy the file 'web_server/config/httpd.conf' to the `web_server/apache/conf` folder.
-* Set the correct server root for the Apache web server. This must be an absolute path starting with a '/'.
+* Set in the file `web_server/apache/conf` the correct server root for the Apache web server. This must be an absolute path starting with a '/'.
   So if your web server is on `C:\my_projects\web_server`, the server root is: `/my_projects/web_server/apache`.
 
 ## Add PHP
