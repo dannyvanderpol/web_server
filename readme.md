@@ -37,8 +37,7 @@ Download the PHP binaries from: https://windows.php.net/download
 The configuration should already be set up.
 
 Now the web server should be working.
-Run the file `start_server.bat` and choose option 1 to start the web server.
-Open a browser and go to: http://localhost:8080.
+Run the file `test_web_server.bat`.
 This should show a simple HTML web page.
 Check if PHP works by opening the PHP info link.
 
@@ -50,15 +49,15 @@ Download MariaDB from: https://mariadb.org/download
 
 * Extract the file to: `web_server/mariadb`.
 * Create the data folder for the databases: `web_server\mariadb\data`
-* Run `web_server/mariadb/bin/mariadb-install-db.exe` to create all required tables.
+* Run `web_server/mariadb/bin/mariadb-install-db.exe` to create all required tables and ini file.
 
-Run the file `start_server.bat` and choose option 2 to start the MariaDB server.
-Connect to the server by running: `connect_mariadb.bat`.
+The webserver can be moved to another location. In that case you need to updated the paths in the my.ini file.
+
+Run the file `test_mariadb.bat`. It starts MariaDB and connects to the server.
 Now you can execute SQL queries (e.g.: `show databases;`).
 Quit by typing `exit`.
 
-Close the MariaDB server and run the file `start_server.bat` and choose option 3 to start all.
-Open a browser and go to: http://localhost:8080.
+Close the MariaDB server and run the file `start_server.bat`. This starts Apache and MariaDB and opens the web page.
 Open the link for testing the MariaDB.
 
 The server is now fully operational.
@@ -72,8 +71,7 @@ Download phpMyAdmin from: https://www.phpmyadmin.net/downloads
 * Extract the file to: `web_server/htdocs/phpmyadmin`.
 * Copy the file `web_server/config/config.inc.php` to `web_server/htdocs/phpmyadmin`.
 
-Run the file 'start_server.bat' and choose option 3 to start all the servers.
-Open a browser and go to: http:\\localhost:8080/phpmyadmin.
+Start the server and open a browser and go to: http:\\localhost:8080/phpmyadmin.
 Check if everyhting works as expected.
 
 ## Add services
