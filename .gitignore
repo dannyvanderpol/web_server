@@ -1,0 +1,2 @@
+# Folders in the htdocs, files in htdocs (like index.html) are still tracked.
+/htdocs/**/
